@@ -5,7 +5,6 @@ description 'CS-ESC'
 version '1.0.2'
 
 client_script 'client/main.lua'
-server_script 'version_check.lua'
 
 ui_page 'nui/index.html'
 
