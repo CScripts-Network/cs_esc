@@ -35,31 +35,31 @@ function IsMenuOpen()
 	return IsMenuRealyOpen
 end
 
-RegisterNUICallback('d1_wroc', function(data, cb)
+RegisterNUICallback('back', function(data, cb)
 	IsMenuRealyOpen = false
 	SetNuiFocus(false, false);
 	DisplayRadar(true)
 end)
-RegisterNUICallback('d1_mapa', function(data, cb)
+RegisterNUICallback('map', function(data, cb)
 	IsMenuRealyOpen = false
 	SetNuiFocus(false, false);
 	SetFrontendActive(true)
 	ActivateFrontendMenu(GetHashKey("FE_MENU_VERSION_MP_PAUSE"), 0, -1)
 	DisplayRadar(true)
 end)
-RegisterNUICallback('d1_prz', function(data, cb)
+RegisterNUICallback('buttons', function(data, cb)
 	IsMenuRealyOpen = false
 	SetNuiFocus(false, false);
 	ActivateFrontendMenu(GetHashKey("FE_MENU_VERSION_LANDING_KEYMAPPING_MENU"), 0, -1)
 	DisplayRadar(true)
 end)
-RegisterNUICallback('d1_ustaw', function(data, cb)
+RegisterNUICallback('settings', function(data, cb)
 	IsMenuRealyOpen = false
 	SetNuiFocus(false, false);
 	ActivateFrontendMenu(GetHashKey("FE_MENU_VERSION_LANDING_MENU"), 0, -1)
 	DisplayRadar(true)
 end)
-RegisterNUICallback('d1_disconnect', function(data, cb)
+RegisterNUICallback('disconnect ', function(data, cb)
 	IsMenuRealyOpen = false
 	SetNuiFocus(false, false);
 	RestartGame();

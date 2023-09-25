@@ -8,6 +8,10 @@ client_script 'client/main.lua'
 
 ui_page 'nui/index.html'
 
+exports {
+	'IsMenuOpen'
+}
+
 files {
     'nui/style.css',
     'nui/index.html',
